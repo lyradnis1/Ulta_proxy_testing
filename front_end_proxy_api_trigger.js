@@ -8,7 +8,7 @@ async function logJSONData(url) {
         var pathName = processedURL.pathname
 
         //if only 1 or less backslash, means that it is homepage
-        if(pathName.split("1") <= 1){
+        if(pathName.split("/") <= 1){
             var pathFragments1 = "homepage"
             var pathFragments2 = "homepage"
         } else {
