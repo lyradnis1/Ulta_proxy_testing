@@ -13,8 +13,8 @@ async function logJSONData(url) {
             var pathFragments2 = "homepage"
         } else {
             //if more than 1 back slash; then we have valid page_type / valid page_name
-            var pathFragments1 =  pathName.split("/").length > 1 ? pathName.split("/")[1] : null; 
-            var pathFragments2 =  pathName.split("/").length > 1 ? pathName.split("/")[2] : null;
+            var pathFragments1 =  pathName.split("/")[1]
+            var pathFragments2 =  pathName.split("/")[2]
         }
         //path fragment can be "" or undefined depending on if user inputs a backslash. This ternary operator supports consistent formatting
         var utag_data = {
