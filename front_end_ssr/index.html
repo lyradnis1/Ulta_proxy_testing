@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script src="">
+  var utag_data = {
+        "page_type": "product listing",
+        "page_group": "brand",
+        "page_name": "nyx",
+        "user_gtid_device": "917999d846db572a4b6a0b108f36befa",
+        "user_gtid_known": "",
+        "user_gtid": "a386f03f-7119-4ceb-956a-1f521cf22506"
+    }
+</script>
+
+<script id="Tealium" type="text/javascript" class="">window.utag_cfg_ovrd = {noview : true};
+    (function(a,b,c,d){
+    a='https://tags.tiqcdn.com/utag/ulta/main/qa/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();</script>
+<body>
+
+
+<script>
+       window.utag_data = {
+        "page_type": "product listing",
+        "page_group": "brand",
+        "page_name": "nyx",
+        "user_gtid_device": "917999d846db572a4b6a0b108f36befa",
+        "user_gtid_known": "",
+        "user_gtid": "a386f03f-7119-4ceb-956a-1f521cf22506"
+    }
+    //trigger utag.view()
+    // delay utag.view?
+    console.log("triggering utag_view")
+    setTimeout(function(){
+        utag.view(utag_data)
+    },1000)
+</script>
+<img src="img_la.jpg" alt="LA" style="width:100%">
+
+<div class="">
+ <h1>This is a Heading</h1>
+ <p>This is a paragraph.</p>
+ <p>This is another paragraph.</p>
+</div>
+
+</body>
+</html>
