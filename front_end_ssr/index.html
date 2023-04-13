@@ -27,7 +27,8 @@
 
 
 <script>
-       window.utag_data = {
+    window.onload = function(){
+        window.utag_data = {
         "page_type": "product listing",
         "page_group": "brand",
         "page_name": "nyx",
@@ -35,18 +36,27 @@
         "user_gtid_known": "",
         "user_gtid": "a386f03f-7119-4ceb-956a-1f521cf22506"
     }
-    //trigger utag.view()
-    // delay utag.view?
+    //pass templated variabe over here
+    var page_name = document.getElementById("page_name").innerText
+    var page_type = document.getElementById("page_type").innerText
+    window.utag_data.page_name = page_name;
+    window.utag_data.page_type = page_type;
     console.log("triggering utag_view")
-    setTimeout(function(){
-        utag.view(utag_data)
-    },1000)
+    utag.view(utag_data)
+    }
 </script>
 
 
 <div class="">
  <h1>Whitebox Testing Environment</h1>
 
+  <h1 id="page_name">
+    <%= page_name %>
+  </h1>
+
+  <h1 id="page_type">
+    <%= page_type %>
+  </h1>
 </div>
 
 </body>
